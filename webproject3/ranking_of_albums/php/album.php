@@ -68,7 +68,7 @@ if ($result1) {
 
         .pic {
             <?php
-            echo "background-image: url(' . $cover . ')";
+            echo "background-image: url('" . $cover . "');";
             ?> 
             background-position: center;
             background-repeat: no-repeat;
