@@ -1,0 +1,52 @@
+body {
+    text-align: center;
+    background-color: rgb(248, 239, 226);
+}
+
+.search-input {
+    border-radius: 40px;
+    height: 40px;
+}
+
+.search-submit {
+    background-image: url(../../images/search-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 250px;
+}
+
+.codrops-demos {
+    float: right;
+    padding-top: 10px;
+}
+
+.demo-1 .codrops-demos {
+    position: absolute;
+    z-index: 2000;
+    top: 30px;
+    left: 30px;
+}
+
+.codrops-demos a {
+    display: inline-block;
+    margin: 10px;
+    color: #333;
+    font-weight: 700;
+    line-height: 30px;
+    border-bottom: 4px solid transparent;
+}
+
+.codrops-demos a:hover {
+    color: #883d59;
+    border-color: #883d59;
+}
+
+.codrops-demos a.current-demo,
+.codrops-demos a.current-demo:hover {
+    color: #aaa;
+    border-color: #aaa;
+}

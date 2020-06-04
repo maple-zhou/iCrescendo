@@ -1,0 +1,194 @@
+/* tagclouds */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.wrapper {
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.wrapper p {
+    padding-top: 150px;
+    line-height: 27px;
+    color: #999;
+    font-size: 14px;
+    text-align: center;
+}
+
+.tagcloud {
+    position: relative;
+    margin-top: -150px;
+}
+
+.tagcloud a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    padding: 11px 30px;
+    color: #333;
+    font-size: 16px;
+    border: 1px solid #e6e7e8;
+    border-radius: 18px;
+    background-color: #f2f4f8;
+    text-decoration: none;
+    white-space: nowrap;
+    -o-box-shadow: 6px 4px 8px 0 rgba(151, 142, 136, .34);
+    -ms-box-shadow: 6px 4px 8px 0 rgba(151, 142, 136, .34);
+    -moz-box-shadow: 6px 4px 8px 0 rgba(151, 142, 136, .34);
+    -webkit-box-shadow: 6px 4px 8px 0 rgba(151, 142, 136, .34);
+    box-shadow: 6px 4px 8px 0 rgba(151, 142, 136, .34);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4,Direction=135, Color='#000000')";
+    /*兼容ie7/8*/
+    filter: progid: DXImageTransform.Microsoft.Shadow(color='#969696', Direction=125, Strength=9);
+    /*strength是阴影大小，direction是阴影方位，单位为度，可以为负数，color是阴影颜色 （尽量使用数字）使用IE滤镜实现盒子阴影的盒子必须是行元素或以行元素显示（block或inline-block;）*/
+}
+
+.tagcloud a:hover {
+    color: #3385cf;
+}
+
+.cloud {
+    width: 48%;
+    ;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    top: 320px;
+}
+
+.search-input {
+    border-radius: 50px;
+    height: 50px;
+}
+
+.search-submit {
+    background-image: url(../../images/search-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 250px;
+}
+
+.codrops-demos {
+    float: right;
+    padding-top: 10px;
+}
+
+.demo-1 .codrops-demos {
+    position: absolute;
+    z-index: 2000;
+    top: 30px;
+    left: 30px;
+}
+
+.codrops-demos a {
+    display: inline-block;
+    margin: 10px;
+    color: #333;
+    font-weight: 700;
+    line-height: 30px;
+    border-bottom: 4px solid transparent;
+}
+
+.codrops-demos a:hover {
+    color: #883d59;
+    border-color: #883d59;
+}
+
+.codrops-demos a.current-demo,
+.codrops-demos a.current-demo:hover {
+    color: #aaa;
+    border-color: #aaa;
+}
+
+.lyrics {
+    width: 48%;
+    ;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    top: 400px;
+    left: 38%;
+}
+
+.btn {
+    position: relative;
+    padding: 1.4rem 4.2rem;
+    padding-right: 2.1rem;
+    font-size: 1.4rem;
+    /* height: 3rem; */
+    color: var(--inv);
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    -webkit-transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* margin-left: 10%; */
+}
+
+.btn:before,
+.btn:after {
+    content: '';
+    position: absolute;
+    -webkit-transition: inherit;
+    transition: inherit;
+    z-index: -1;
+}
+
+.btn:hover {
+    color: var(--def);
+    -webkit-transition-delay: .6s;
+    transition-delay: .6s;
+}
+
+.btn:hover:before {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.btn:hover:after {
+    background: var(--inv);
+    -webkit-transition-delay: .4s;
+    transition-delay: .4s;
+}
+
+
+/* From Top */
+
+.from-top:before,
+.from-top:after {
+    left: 0;
+    height: 0;
+    width: 100%;
+}
+
+.from-top:before {
+    bottom: 0;
+    border: 1px solid var(--inv);
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.from-top:after {
+    top: 0;
+    height: 0;
+}
+
+.from-top:hover:before,
+.from-top:hover:after {
+    height: 100%;
+}
