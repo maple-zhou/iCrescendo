@@ -39,7 +39,7 @@ def creat_cut_text(f):
     return res
 
 
-conn = pymysql.connect(host='121.199.77.180', port=3306, user='root', passwd='Zrh999999', db='NeteaseCloudMusic', charset="utf8mb4")
+conn = pymysql.connect(host='xxx', port=3306, user='xxx', passwd='xxx', db='xxx', charset="utf8mb4")
 cursor = conn.cursor()
 print("Connect!")
 
