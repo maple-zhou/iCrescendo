@@ -44,7 +44,7 @@ if ($result1) {
 
 <head>
     <meta charset="utf-8">
-    <title>album</title>
+    <title>iCrescendo-<?php echo $album_name ?></title>
     <!-- 引入 echarts.js -->
     <script src="echarts.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/album_visualization.css" />

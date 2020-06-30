@@ -54,7 +54,7 @@ if ($result1) {
 
 <head>
   <meta charset="utf-8">
-  <title><?php echo $song_name ?></title>
+  <title>iCrescendo-<?php echo $song_name ?></title>
 
   <link type="text/css" href="css/style.css" rel="stylesheet" />
   <script type="text/javascript" src="js/tagcloud.js"></script>

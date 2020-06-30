@@ -38,11 +38,11 @@
     $total = $ret["hits"]["hits"];
     $len = count($total);
     ?>
-    <title><?php echo $name; ?></title>
+    <title>iCrescendo-<?php echo $name; ?></title>
     <meta charset="utf8mb4">
     <base target="_blank">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Song</title>
+    <title>iCrescendo-Album</title>
 
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>

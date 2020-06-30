@@ -39,11 +39,11 @@
     $len = count($total);
     ?>
 
-    <title><?php echo $name; ?></title>
+    <title>iCrescendo-<?php echo $name; ?></title>
     <meta charset="utf8mb4">
     <base target="_blank">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Song</title>
+    <title>iCrescendo-Singer</title>
 
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
@@ -155,7 +155,7 @@
             $total_com = $source["total comments"];
             $img = $source['img'];
             echo "<div class='row'>";
-            echo "<p style='color:#ea680c;font-size: 3rem;font-weight: 600;' target='_self' href = '../ranking_of_singers/php/onesinger.php?singer=" . $singer_name . "'>";
+            echo "<a style='color:#ea680c;font-size: 3rem;font-weight: 600;' target='_self' href = '../ranking_of_singers/php/onesinger.php?singer=" . $singer_name . "'>";
             echo $singer_name . "</a><br>";
             echo "<p style='color:#f39f9f;font-weight: 600;font-size: 1rem; padding-left:10px; padding-top:0px;'> <br>Total comments:  $total_com   <br> Album number:   $album_num  </font>";
 
